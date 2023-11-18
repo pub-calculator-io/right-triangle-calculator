@@ -1,4 +1,4 @@
-# Right Triangle Calculator WordPress Widget by [Calculator.iO](https://www.calculator.io/ "Calculator.iO Homepage")
+# Right Triangle Calculator Widget for WordPress
 
 Right triangle calculator finds missing triangle measurements. It calculates side lengths, angles, perimeter, area, altitude-to-hypotenuse, inradius, and circumradius.
 
