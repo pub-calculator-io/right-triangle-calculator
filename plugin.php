@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Right Triangle Calculator by www.calculator.io
+Plugin Name: CI Right triangle calculator
 Plugin URI: https://www.calculator.io/right-triangle-calculator/
 Description: Right triangle calculator finds missing triangle measurements. It calculates side lengths, angles, perimeter, area, altitude-to-hypotenuse, inradius, and circumradius.
 Version: 1.0.0
