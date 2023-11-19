@@ -1,4 +1,4 @@
-=== Right Triangle Calculator ===
+=== Right Triangle Calculator by www.calculator.io ===
 Contributors: calculatorio
 Tags: right triangle calculator, 90-degree angle triangle calculation, hypotenuse determination, Pythagorean triples, triangle area and perimeter calculation, special right triangles, trigonometry in right triangles, calculating triangle altitude
 Requires at least: 5.0
