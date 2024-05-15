@@ -12,7 +12,7 @@ function calculate(){
   let p = getSide('perimeter');
   input.silent = false;
   if([a,b,c,A,B,h,S,p].reduce((count,item)=>item?count+1:count,0) != 2){
-    input.error([],"Please provide only 2 values to calculate");
+    input.error([],"Provide only 2 values to calculate");
   }
   if(A&&A>=90 || B&&B>=90){
     input.error([],"Angles must be less than 90° or π/2 radians");
@@ -119,7 +119,7 @@ function calculate(){
     // 6. hS,hp - height + S/p
     else if(h&&S||h&&p){
       if(h&&p){
-        input.error(['height','perimeter'],"Unable to calculate based on height and perimeter",true);
+        input.error(['height','perimeter'],"Unable to calculate based on height and perimeter", true);
         return;
       }
       else if(h && S){

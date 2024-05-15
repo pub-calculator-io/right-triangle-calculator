@@ -47,21 +47,21 @@
                 </svg>
                 	</div>
                 	<div class="input-wrapper row">
-                		<label class="input col   ">
+                		<label class="input col triangle-calculator,pythagorean-theorem-calculator  ">
                 			<p class="input__title">a</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="side_a" value="3"  />
                 			</div>
                 		
                 		
-                		</label>		<label class="input col   ">
+                		</label>		<label class="input col triangle-calculator,pythagorean-theorem-calculator  ">
                 			<p class="input__title">b</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="side_b" value="4"  />
                 			</div>
                 		
                 		
-                		</label>		<label class="input col   ">
+                		</label>		<label class="input col triangle-calculator,pythagorean-theorem-calculator  ">
                 			<p class="input__title">c</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="side_c" value=""  />
@@ -70,7 +70,7 @@
                 		
                 		</label>	</div>
                 	<div class="input-wrapper row">
-                		<label class="input col   ">
+                		<label class="input col triangle-calculator,pythagorean-theorem-calculator  ">
                 			<p class="input__title">∠α</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="angle_a" value=""  />
@@ -78,7 +78,7 @@
                 			</div>
                 		
                 		
-                		</label>		<label class="input col   ">
+                		</label>		<label class="input col triangle-calculator,pythagorean-theorem-calculator  ">
                 			<p class="input__title">∠β</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="angle_b" value=""  />
@@ -86,7 +86,7 @@
                 			</div>
                 		
                 		
-                		</label>		<label class="input col   ">
+                		</label>		<label class="input col triangle-calculator,pythagorean-theorem-calculator  ">
                 			<p class="input__title">h</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="height" value=""  />
@@ -95,15 +95,15 @@
                 		
                 		</label>	</div>
                 	<div class="input-wrapper row">
-                		<label class="input col   ">
-                			<p class="input__title">S (area)</p>
+                		<label class="input col triangle-calculator,pythagorean-theorem-calculator  ">
+                			<p class="input__title">Area (S)</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="area" value=""  />
                 			</div>
                 		
                 		
-                		</label>		<label class="input col   ">
-                			<p class="input__title">p (perimeter)</p>
+                		</label>		<label class="input col triangle-calculator,pythagorean-theorem-calculator  ">
+                			<p class="input__title">Perimeter (p)</p>
                 			<div class="input-field row">
                 				<input type="text" class="input-field__input" placeholder=""  id="perimeter" value=""  />
                 			</div>
@@ -117,13 +117,16 @@
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
                 
+                	<script type="text/javascript" src="./assets/js/lib/math.min.js" async></script>
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
@@ -138,8 +141,7 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col">
 	<div class="result-table__wrapper"> 
 		<table class="result-table">
@@ -151,39 +153,39 @@
 			<tbody>
 				<tr>
 					<th>a</th>
-					<td colspan="3" id="result_a">3</td>
+					<td colspan="3" id="result_a" class="animate">3</td>
 				</tr>
 				<tr>
 					<th>b</th>
-					<td colspan="3" id="result_b">4</td>
+					<td colspan="3" id="result_b" class="animate">4</td>
 				</tr>
 				<tr>
 					<th>c</th>
-					<td colspan="3" id="result_c">5</td>
+					<td colspan="3" id="result_c" class="animate">5</td>
 				</tr>
 				<tr>
 					<th>h</th>
-					<td colspan="3" id="result_h">2.4</td>
+					<td colspan="3" id="result_h" class="animate">2.4</td>
 				</tr>
 				<tr>
 					<th>α</th>
-					<td colspan="3" id="result_A">36.8699° = 0.6435011 rad</td>
+					<td colspan="3" id="result_A" class="animate">36.8699° = 0.6435011 rad</td>
 				</tr>
 				<tr>
 					<th>β</th>
-					<td colspan="3" id="result_B">53.1301° = 0.9272952 rad</td>
+					<td colspan="3" id="result_B" class="animate">53.1301° = 0.9272952 rad</td>
 				</tr>
 				<tr>
 					<th>area</th>
-					<td id="result_S">6</td>
+					<td id="result_S" class="animate">6</td>
 					<th>inradius</th>
-					<td id="result_r">1</td>
+					<td id="result_r" class="animate">1</td>
 				</tr>
 				<tr>
 					<th>perimeter</th>
-					<td id="result_p">12</td>
+					<td id="result_p" class="animate">12</td>
 					<th>circumradius</th>
-					<td id="result_R">2.5</td>
+					<td id="result_R" class="animate">2.5</td>
 				</tr>
 			</tbody>
 		</table>

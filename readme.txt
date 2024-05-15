@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Right Triangle 
 == Screenshots ==
 
 1. The Right Triangle Calculator Input Form.
-2. The Right Triangle Calculator Calculation Results.
 
 == Installation ==
 

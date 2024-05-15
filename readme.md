@@ -3,7 +3,6 @@
 Right triangle calculator finds missing triangle measurements. It calculates side lengths, angles, perimeter, area, altitude-to-hypotenuse, inradius, and circumradius.
 
 ![Right Triangle Calculator Input Form](/assets/images/screenshot-1.png "Right Triangle Calculator Input Form")
-![Right Triangle Calculator Calculation Results](/assets/images/screenshot-2.png "Right Triangle Calculator Calculation Results")
 
 ## Installation
 
